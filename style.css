@@ -1,17 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  background: peachpuff;
-  text-align: center;
-  margin-top: 50px;
-}
-h1 {
-  color: darkblue;
-}
-button {
-  padding: 10px 20px;
-  font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+}
 
-function greet() {
-  alert("Hello! Thanks for visiting my website 🚀");
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero h1 {
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    background:#333;
+    color:white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background:#333;
+    color:white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hero {
+        padding: 2rem 1rem;
+    }
 }
